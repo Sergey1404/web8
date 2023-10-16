@@ -17,11 +17,9 @@ function checkloveper(){
      alert('Мин длина 3')
     }else if(!isNaN(lname)){
      alert('Никаких чисел');
-    }
-    else{
+    }else{
     var lovdata = Math.random() * 100;
     lovdata = Math.floor(lovdata);
-    //document.getElementById('lovevalue').value = lovdata + "%";
-    alert('{name} подходит к {lname} на {lovdata} процентов!');
+    alert((name)+' подходит к '+ (lname) +' на '+ (lovdata) +' процентов!');
     }
    }
