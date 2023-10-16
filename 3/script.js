@@ -1,12 +1,7 @@
 function isLeapYear (year) {
-    return year % 4 === 0;
-}
-var year = + prompt("Введи год:");
-if(isNaN(year)){
-    alert("Нужно ввести целое число.")
-}
-if(isLeapYear(year)){
-    alert("Год " + year + " - високосный.");
-} else {
-    alert("Год " + year + " - не високосный.");
+    if(((year % 4 == 0) && (year % 100 != 0)) || (year % 400 == 0)){
+        alert("Високосный год");
+    } else {
+        alert("Не является високосным");
+    }
 }
