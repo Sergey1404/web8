@@ -11,7 +11,7 @@ function calculateBMI() {
     else if (weight === "" || isNaN(weight)) 
         result.innerHTML = "Введите вес!";
     else {
-        let bmi = (weight / (height * height)).toFixed(2);
+        let bmi = (weight / ((height * height) / 10000)).toFixed(2);
         if (bmi <= 18.5) 
             result.innerHTML = `Недостаточный вес : <span>${bmi}</span>`;
         else if (bmi >= 18.5 && bmi <= 25) 
